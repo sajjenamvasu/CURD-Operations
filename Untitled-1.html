@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        REgistration form
+    </title>
+    <link rel="stylesheet" href="Untitled-3.css">
+</head>
+<center>
+<body>
+ <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Class</th>
+							<th>Year</th>
+							<th>City</th>
+							<th>Country</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+  </td>
+  <table bgcolor="#FFFFFF">
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Student ID*</label><label class="validation-error hide" id="idValidationError">This field is required.</label>
+                        <input type="text" name="id" id="id">
+                    </div>
+                    <div>
+                        <label>Name</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input type="text" name="email" id="email">
+                    </div>
+                   <div>
+                         <label>Class</label>
+                        <input type="text" name="class" id="class">
+                  </div>
+					<div>
+                         <label>Year</label>
+                        <input type="text" name="year" id="year">
+                    </div>
+					<div>
+                         <label>City</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+					<div>
+                         <label>Country</label>
+                        <input type="text" name="country" id="country">
+                  </div>
+                    <div  class="form-action-buttons"><center>
+					<input type="Reset" name="user"value="Reset" required>
+                      <input name="submit" type="submit" value="Save"></center>
+                    </div>
+					
+                </form>            </td>
+        </tr>
+    </table>    
+  <script src="Untitled-2.js"></script>
+</body>
+</center>
+</html>
