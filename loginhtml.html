@@ -1,0 +1,58 @@
+
+<head>
+    <title>
+        REgistration form
+    </title>
+    <link rel="stylesheet" href="Untitled-3.css">
+</head>
+
+<center>
+<script>  
+function validateform(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;  
+  
+if (name=="user@gmail.com" && mname=="123456"){  
+  alert("successfull login");  
+  return true;  
+}
+else if
+{  
+  alert("enter correct details");  
+  return false;  
+  }  
+}  
+</script> 
+<body>
+ 
+  <table bgcolor="#FFFFFF">
+        <tr>
+            <td>
+			     <form name="myform" method="post" action="reg.html" onsubmit="return validateform()" > 
+                <form onSubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Username</label><label class="validation-error hide" id="idValidationError">This field is required.</label>
+                        <input type="text" name="name" value="" required id="name">
+                    </div>
+                    <div>
+                        <label>Password</label>
+                        <input type="text" name="mname" value="" required id="mname">
+                    </div>
+                  
+               
+					   <div  class="form-action-buttons"><center>
+				      <input name="submit" type="submit" value="Login">
+					 <input name="submit" type="submit" value="Reg">
+				       </center>
+               
+		
+                      </div>
+					
+                </form>            </td>
+        </tr>
+    </table>    
+
+</body>
+</form>
+</center>
+</html>

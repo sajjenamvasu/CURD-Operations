@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        REgistration form
+    </title>
+    <link rel="stylesheet" href="Untitled-3.css">
+</head>
+<center>
+<body>
+ 
+  <table bgcolor="#FFFFFF">
+        <tr>
+            <td>
+			<form action="loginhtml.html" method="get">
+                <form onSubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>First name</label><label class="validation-error hide" id="idValidationError">This field is required.</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div>
+                        <label>Middile Name</label>
+                        <input type="text" name="mname" id="mname">
+                    </div>
+                    <div>
+                        <label>Last Name</label>
+                        <input type="text" name="lname" id="lname">
+                    </div>
+					 <div>
+                         <label>Mobile No:</label>
+                        <input type="text" name="number" id="number">
+                  </div>
+                   <div>
+                         <label>Email:</label>
+                        <input type="text"required name="user@gmail.com" name="email" id="email">
+                  </div>
+					<div>
+                         <label>Password</label>
+                        <input type="text" required name="123456" name="password" id="password">
+                    </div>
+					<div>
+                         <label>ConformPassword</label>
+                        <input type="text" name="password2" id="password2">
+                    </div>
+					<div  class="form-action-buttons"><center>
+					<input type="Reset" name="user"value="Reset" required>
+                      <input name="submit" type="submit" value="Save"></center>
+                    </div>
+					
+                </form>            </td>
+        </tr>
+    </table>    
+  <script src="Untitled-2.js"></script>
+</body>
+</center>
+</html>
